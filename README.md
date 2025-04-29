@@ -13,30 +13,6 @@ This project showcases the integration of document retrieval, natural language u
 
 **Streamlit Interface**: User-friendly web interface for easy interaction with the chatbot.
 
-## Project Structure
-
-.
-├── .env                    # Environment variables (e.g., API tokens)
-├── .gitignore               # Git ignore file to exclude unnecessary files
-├── app.py                   # Main entry point for the Streamlit application
-├── components               # Custom modules for various components like models and retrievers
-│   ├── chatting_model.py    # Defines the model for chatting and generating responses
-│   ├── document_loader.py   # Loads and processes documents from URLs
-│   ├── embeddings_model.py  # Handles embeddings for the documents
-│   ├── retriever.py         # Vector store retriever for document search
-│   ├── text_splitter.py     # Splits documents into manageable chunks
-│   ├── vectorstore.py       # Handles storage and retrieval of document embeddings
-│   └── user_query.py        # Prepares user queries for processing
-├── pipelines                # Logic for indexing documents and handling Q&A
-│   ├── indexing_pipeline.py # Handles indexing of documents from URLs
-│   ├── qa_pipeline.py      # Main QA pipeline for answering user queries
-├── tests                    # Unit tests for various modules in the project
-├── utils                    # Utility functions for tasks like formatting and file handling
-│   ├── file_utils.py        # Utilities for file handling (e.g., saving/loading data)
-│   └── response_utils.py    # Utilities for formatting and processing responses
-└── vectorstores             # Folder for storing large files like embeddings
-    └── cs_soft.pkl          # Pre-indexed vector store for document embeddings
-
 
 ## Installation
 Prerequisites
@@ -58,8 +34,6 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ## Install the required dependencies:
 
 ```bash
-Copy
-Edit
 pip install -r requirements.txt
 ```
 Create a .env file in the root of the project and add any necessary environment variables (e.g., Hugging Face tokens).
@@ -91,4 +65,4 @@ Open the app in your web browser (default: http://localhost:8501).
 The project includes a suite of unit tests for various components to ensure correctness and functionality.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
