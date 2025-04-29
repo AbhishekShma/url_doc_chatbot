@@ -1,5 +1,5 @@
 # URL Document Chatbot
-## About
+## Overview
 The URL Document Chatbot is a retrieval-augmented generation (RAG) application designed to answer user queries based on information fetched from URLs. The chatbot retrieves relevant documents, processes the data, and generates accurate answers using advanced language models like Hugging Face's TinyLlama. The system leverages a sliding memory window for context and uses a vector store for efficient retrieval of relevant documents.
 
 This project showcases the integration of document retrieval, natural language understanding, and conversational AI, making it ideal for information extraction applications in real-world scenarios such as technical support, content summarization, and customer service automation.
